@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Warriors</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class="header">
+ <h2>Warriors v.1.0</h2>
+ <h4 id="goldcounter">Gold: 0</h4>
+</div>
+
+  <br>
+
+  <!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'Statistics')">Stats</button>
+  <button class="tablinks" onclick="openTab(event, 'Warriors')">Warriors</button>
+  <button class="tablinks" onclick="openTab(event, 'Upgrades')">Upgrades</button>
+  <button class="tablinks" onclick="openTab(event, 'Achievements')">Achievements</button>
+  <button class="tablinks" onclick="openTab(event, 'Worlds')">Worlds</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <button onclick="ObtainGold()">Obtain Gold</button>
+</div>
+  
+<div id="Statistics" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <p id="statsGold">Gold: 0</p>
+  <p id="statsGPC">Gold Per Click: 1</p>
+</div>
+
+<div id="Warriors" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <p>Your Warriors</p> 
+</div>
+
+<div id="Upgrades" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <p>Your Upgrades</p>
+</div>
+
+<div id="Achievements" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <p>Your Achievements</p>
+</div>
+
+<div id="Worlds" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+  <p>Current Worlds:</p>
+</div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
